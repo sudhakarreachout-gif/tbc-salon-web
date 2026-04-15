@@ -121,14 +121,24 @@ body {
 .neon-sign {
   font-family: 'Pacifico', cursive;
   color: #FF3DAD;
-  text-shadow: 0 0 4px #FF3DAD, 0 0 12px #FF3DAD, 0 0 25px #FF3DAD44;
+  text-shadow: 
+    0 0 2px #FF3DAD, 
+    0 0 9px #FF3DAD, 
+    0 0 20px #FF3DAD, 
+    0 0 35px #FF3DAD66;
   animation: flicker 8s infinite;
+  letter-spacing: 0.01em;
 }
 
 .neon-sign-blue {
   font-family: 'Pacifico', cursive;
   color: #2DDFFF;
-  text-shadow: 0 0 4px #2DDFFF, 0 0 12px #2DDFFF, 0 0 25px #2DDFFF44;
+  text-shadow: 
+    0 0 2px #2DDFFF, 
+    0 0 9px #2DDFFF, 
+    0 0 20px #2DDFFF, 
+    0 0 35px #2DDFFF66;
+  letter-spacing: 0.01em;
 }
 
 .wood-border {

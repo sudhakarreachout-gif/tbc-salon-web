@@ -41,7 +41,7 @@ export default function Hero() {
           <span className="block text-[#1A1209] font-black text-5xl md:text-7xl tracking-tight uppercase">
             Where Style
           </span>
-          <span className="block neon-sign text-5xl md:text-7xl">
+          <span className="block neon-sign text-4xl md:text-6xl">
             Comes Alive
           </span>
         </h1>

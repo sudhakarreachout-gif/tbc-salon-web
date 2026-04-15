@@ -29,7 +29,7 @@ export default function Gallery() {
         <div className="text-center md:text-left mb-12">
           <p className="section-subtitle">The Portfolio</p>
           <h2 className="section-title mt-2 text-tbc-white">
-            OUR <span className="neon-sign font-display lowercase tracking-normal text-5xl md:text-6xl">Master</span> PIECES.
+            OUR <span className="neon-sign font-display lowercase tracking-normal text-4xl md:text-5xl">Master</span> PIECES.
           </h2>
           <p className="mt-4 text-tbc-muted max-w-2xl text-lg">
             A vibrant showcase of precision, nature, and neon-lit artistry.

@@ -11,8 +11,10 @@ export default function Booking() {
             <span className="w-2 h-2 rounded-full bg-tbc-neon-pink"></span>
             Open Until 10PM Everyday
           </div>
-          <h2 className="section-title text-tbc-ink">
-            RESERVE <span className="neon-sign font-display lowercase tracking-normal text-5xl md:text-7xl">Your</span> SLOT.
+          <h2 className="section-title text-tbc-ink flex items-baseline justify-center gap-3">
+            <span>RESERVE</span>
+            <span className="neon-sign font-display lowercase tracking-normal text-4xl md:text-6xl transform -translate-y-1">Your</span> 
+            <span>SLOT.</span>
           </h2>
           <p className="mt-6 text-tbc-muted text-lg max-w-2xl mx-auto font-medium leading-relaxed">
             Experience the vibrant vibe at <span className="font-display text-tbc-neon-pink text-2xl lowercase tracking-normal ml-1">The Barber Club</span>. Reserve instantly through Noona or drop by.

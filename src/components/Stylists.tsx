@@ -43,7 +43,7 @@ export default function Stylists() {
           <div className="text-center md:text-left w-full md:w-auto">
             <p className="section-subtitle">Meet The Artists</p>
             <h2 className="section-title mt-2 text-tbc-white">
-              THE <span className="neon-sign font-display lowercase tracking-normal text-5xl md:text-6xl">Talent</span> BEHIND <br className="hidden md:block"/> THE CHAIR.
+              THE <span className="neon-sign font-display lowercase tracking-normal text-4xl md:text-5xl">Talent</span> BEHIND <br className="hidden md:block"/> THE CHAIR.
             </h2>
           </div>
           <a href="#booking" className="btn-outline-light px-8 py-3 rounded-full text-xs font-black tracking-widest uppercase shrink-0 hidden md:block">

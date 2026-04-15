@@ -54,10 +54,10 @@ export default function Services() {
         
         <div className="text-center mb-16">
           <p className="section-subtitle">Price Menu</p>
-          <h2 className="section-title mt-2 text-tbc-ink flex items-center justify-center gap-3">
-            <span className="hidden sm:block">🌿</span> 
-            <span className="neon-sign font-display lowercase tracking-normal text-5xl md:text-6xl mr-2">Premium</span> 
-            SERVICES
+          <h2 className="section-title mt-2 text-tbc-ink flex items-baseline justify-center gap-3 leading-none">
+            <span className="hidden sm:block translate-y-1">🌿</span> 
+            <span className="neon-sign font-display lowercase tracking-normal text-4xl md:text-5xl mr-2 transform -translate-y-1">Premium</span> 
+            <span className="uppercase">SERVICES</span>
           </h2>
           <p className="mt-4 text-tbc-muted max-w-2xl mx-auto text-lg font-medium">
             Transparent pricing for exceptional quality. Vibrant results from the best in Madhapur.

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap');
 @import "tailwindcss";
 
 /* ─── TBC Design Tokens — Warm Vibrant Barbershop ─── */
@@ -28,7 +28,7 @@
   --color-tbc-white:     #FFFDF8;
 
   --font-outfit:  'Outfit', sans-serif;
-  --font-display: 'Pacifico', cursive;
+  --font-display: 'Satisfy', cursive;
 
   /* Animations */
   --animate-fade-in-up: fade-in-up 0.7s ease forwards;
@@ -119,25 +119,23 @@ body {
 }
 
 .neon-sign {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Satisfy', cursive;
   color: #FF3DAD;
   text-shadow: 
-    0 0 2px #FF3DAD, 
-    0 0 9px #FF3DAD, 
-    0 0 20px #FF3DAD, 
-    0 0 35px #FF3DAD66;
+    0 0 3px #FF3DAD, 
+    0 0 8px #FF3DAD, 
+    0 0 14px #FF3DAD77;
   animation: flicker 8s infinite;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .neon-sign-blue {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Satisfy', cursive;
   color: #2DDFFF;
   text-shadow: 
-    0 0 2px #2DDFFF, 
-    0 0 9px #2DDFFF, 
-    0 0 20px #2DDFFF, 
-    0 0 35px #2DDFFF66;
+    0 0 3px #2DDFFF, 
+    0 0 8px #2DDFFF, 
+    0 0 14px #2DDFFF77;
   letter-spacing: 0.01em;
 }
 

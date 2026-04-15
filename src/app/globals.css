@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+/* ─── TBC Design Tokens — Warm Vibrant Barbershop ─── */
+@theme {
+  /* Warm Backgrounds */
+  --color-tbc-cream:     #F8F1E3;
+  --color-tbc-beige:     #EDE3CF;
+  --color-tbc-linen:     #FDF8F0;
+  --color-tbc-warm-dark: #1E160A;
+  --color-tbc-bark:      #2E200E;
+  --color-tbc-wood:      #8B5E3C;
+
+  /* Neon Accents */
+  --color-tbc-neon-pink: #FF3DAD;
+  --color-tbc-neon-blue: #2DDFFF;
+  --color-tbc-neon-green:#39FF14;
+
+  /* Naturals */
+  --color-tbc-plant:     #3D7A40;
+  --color-tbc-sage:      #7FAE7B;
+  --color-tbc-amber:     #D4843A;
+  --color-tbc-gold:      #D4A017;
+
+  /* Text */
+  --color-tbc-ink:       #1A1209;
+  --color-tbc-muted:     #7A6A58;
+  --color-tbc-white:     #FFFDF8;
+
+  --font-outfit:  'Outfit', sans-serif;
+  --font-display: 'Pacifico', cursive;
+
+  /* Animations */
+  --animate-fade-in-up: fade-in-up 0.7s ease forwards;
+  --animate-float:      float 6s ease-in-out infinite;
+  --animate-glow-pink:  glow-pink 2s ease-in-out infinite;
+  --animate-glow-blue:  glow-blue 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes glow-pink {
+  0%, 100% { box-shadow: 0 0 6px #FF3DAD, 0 0 15px #FF3DAD44; }
+  50%       { box-shadow: 0 0 12px #FF3DAD, 0 0 30px #FF3DAD66; }
+}
+
+@keyframes glow-blue {
+  0%, 100% { box-shadow: 0 0 6px #2DDFFF, 0 0 15px #2DDFFF44; }
+  50%       { box-shadow: 0 0 12px #2DDFFF, 0 0 30px #2DDFFF66; }
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes flicker {
+  0%, 100%  { opacity: 1; text-shadow: 0 0 5px #FF3DAD, 0 0 15px #FF3DAD; }
+  5%, 20%   { opacity: 0.9; }
+  10%, 25%  { opacity: 1; }
+  50%, 80%  { opacity: 1; }
+  60%       { opacity: 0.85; }
+}
+
+/* ─── Base ─── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #F8F1E3;
+  color: #1A1209;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #EDE3CF; }
+::-webkit-scrollbar-thumb { background: #FF3DAD; border-radius: 3px; }
+
+/* ─── Selection ─── */
+::selection { background: #FF3DAD33; color: #FF3DAD; }
+
+/* ─── Utility Classes ─── */
+
+.glass-warm {
+  background: rgba(253, 248, 240, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 160, 23, 0.15);
+}
+
+.glass-dark {
+  background: rgba(30, 22, 10, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 61, 173, 0.15);
+}
+
+.neon-pink {
+  color: #FF3DAD;
+  text-shadow: 0 0 6px #FF3DAD, 0 0 15px #FF3DAD66;
+  animation: flicker 8s infinite;
+}
+
+.neon-blue {
+  color: #2DDFFF;
+  text-shadow: 0 0 6px #2DDFFF, 0 0 15px #2DDFFF66;
+}
+
+.neon-sign {
+  font-family: 'Pacifico', cursive;
+  color: #FF3DAD;
+  text-shadow: 0 0 4px #FF3DAD, 0 0 12px #FF3DAD, 0 0 25px #FF3DAD44;
+  animation: flicker 8s infinite;
+}
+
+.neon-sign-blue {
+  font-family: 'Pacifico', cursive;
+  color: #2DDFFF;
+  text-shadow: 0 0 4px #2DDFFF, 0 0 12px #2DDFFF, 0 0 25px #2DDFFF44;
+}
+
+.wood-border {
+  border: 2px solid #8B5E3C;
+}
+
+.warm-card {
+  background: #FFFDF8;
+  border: 1px solid #EDE3CF;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.warm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(212, 132, 58, 0.15);
+  border-color: #FF3DAD44;
+}
+
+.dark-card {
+  background: #2E200E;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-card:hover {
+  transform: translateY(-6px);
+  border-color: #FF3DAD55;
+  box-shadow: 0 20px 50px rgba(255, 61, 173, 0.15);
+}
+
+.section-padding {
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding { padding: 8rem 2rem; }
+}
+
+.btn-pink {
+  background: #FF3DAD;
+  color: #FFFDF8;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: all 0.3s ease;
+  animation: glow-pink 2.5s ease-in-out infinite;
+}
+
+.btn-pink:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 30px #FF3DAD, 0 0 60px #FF3DAD55;
+}
+
+.btn-outline-dark {
+  background: transparent;
+  border: 1.5px solid #1A1209;
+  color: #1A1209;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background: #1A1209;
+  color: #F8F1E3;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  background: transparent;
+  border: 1.5px solid #FFFDF8;
+  color: #FFFDF8;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: #FFFDF8;
+  color: #1A1209;
+  transform: translateY(-2px);
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.section-subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #FF3DAD;
+}
+
+/* Leaf / Plant decoration */
+.leaf-accent::before {
+  content: "🌿";
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  filter: brightness(0.8) saturate(1.5);
+}
+
+.wood-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #8B5E3C, transparent);
+  border: none;
+  margin: 0;
+}
+
+.stripe-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(139, 94, 60, 0.03) 10px,
+    rgba(139, 94, 60, 0.03) 20px
+  );
+}

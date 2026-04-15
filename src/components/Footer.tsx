@@ -75,12 +75,12 @@ export default function Footer() {
             <div className="dark-card p-6 wood-border">
               <ul className="space-y-4">
                 <li className="flex justify-between items-center text-xs">
-                  <span className="text-tbc-muted font-bold tracking-widest uppercase">Mon - Fri</span>
-                  <span className="text-tbc-white font-black">10AM - 10PM</span>
+                  <span className="text-tbc-white tracking-widest uppercase">Mon - Fri</span>
+                  <span className="text-tbc-white">10AM - 10PM</span>
                 </li>
                 <li className="flex justify-between items-center text-xs pt-4 border-t border-white/5">
-                  <span className="text-tbc-neon-pink font-bold tracking-widest uppercase">Sat - Sun</span>
-                  <span className="neon-pink font-black">10AM - 11PM</span>
+                  <span className="text-tbc-white tracking-widest uppercase">Sat - Sun</span>
+                  <span className="text-tbc-white">10AM - 10PM</span>
                 </li>
               </ul>
               <div className="mt-6 flex items-center justify-center gap-3 text-[10px] text-tbc-plant font-black uppercase tracking-[0.2em] bg-tbc-plant/10 py-2 rounded">

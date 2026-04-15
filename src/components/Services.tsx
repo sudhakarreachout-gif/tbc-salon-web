@@ -56,7 +56,7 @@ export default function Services() {
           <p className="section-subtitle">Price Menu</p>
           <h2 className="section-title mt-2 text-tbc-ink flex items-center justify-center gap-3">
             <span className="hidden sm:block">🌿</span> 
-            <span className="neon-blue font-display lowercase tracking-normal text-5xl md:text-6xl mr-2">Premium</span> 
+            <span className="neon-sign font-display lowercase tracking-normal text-5xl md:text-6xl mr-2">Premium</span> 
             SERVICES
           </h2>
           <p className="mt-4 text-tbc-muted max-w-2xl mx-auto text-lg font-medium">

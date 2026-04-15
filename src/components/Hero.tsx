@@ -41,13 +41,7 @@ export default function Hero() {
           <span className="block text-[#1A1209] font-black text-5xl md:text-7xl tracking-tight uppercase">
             Where Style
           </span>
-          <span
-            className="block font-display text-5xl md:text-7xl"
-            style={{
-              color: "#FF3DAD",
-              textShadow: "0 0 10px #FF3DAD, 0 0 30px #FF3DAD88",
-            }}
-          >
+          <span className="block neon-sign text-5xl md:text-7xl">
             Comes Alive
           </span>
         </h1>

@@ -14,8 +14,8 @@ export default function Hero() {
           unoptimized
           className="object-cover opacity-90 contrast-100 brightness-110"
         />
-        {/* Very light warm overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F8F1E3]/20 via-transparent to-[#F8F1E3]/40" />
+        {/* Slightly more opaque warm overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#F8F1E3]/40 via-[#F8F1E3]/20 to-[#F8F1E3]/60" />
         {/* Soft diagonal stripe texture — reduced opacity */}
         <div className="absolute inset-0 stripe-bg opacity-10" />
       </div>
